@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-card">
+      <h1 class="page-title">🌦 Weather App</h1>
+
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Enter City Name"
+          spellcheck="false"
+          class="user-input"
+        />
+        <button class="btn-search">
+          <img src="weather-Images/search-icon.png" alt="" />
+        </button>
+      </div>
+      <p class="not-found hide-text">City not found...</p>
+
+      <div class="weather hidden-info">
+        <div class="weather-info">
+          <img
+            src=" https://openweathermap.org/img/wn/10d@2x.png"
+            class="weather-icon"
+            alt=""
+          />
+          <p class="weather-name">clear</p>
+        </div>
+        <h1 class="temperature"><span class="temp">22</span>°C</h1>
+        <h2 class="city">Ghana</h2>
+        <div class="details">
+          <div class="col">
+            <img
+              src="weather-Images/humidity.png"
+              alt=""
+              class="humidity-image"
+            />
+            <div class="info">
+              <p class="info-text"><span class="humidity">50</span>%</p>
+              <p class="info-text">Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="weather-Images/wind-speed.png" class="wind-image" />
+            <div class="info">
+              <p class="info-text"><span class="wind-speed">50</span> km/h</p>
+              <p class="info-text">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+        <button type="reset" class="hidden btn-reset">clear</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

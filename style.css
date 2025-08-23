@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #222;
+}
+
+.weather-card {
+  width: 92%;
+  max-width: 470px;
+  background: linear-gradient(to bottom right, #133257, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  padding: 20px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+img {
+  width: 45px;
+}
+.weather-info {
+  margin-bottom: 30px;
+}
+.weather-icon {
+  width: 180px;
+  height: auto;
+}
+.weather-name {
+  margin-top: -40px;
+}
+.wind-image,
+.humidity-image {
+  filter: brightness(0) invert(2);
+}
+.info-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.info {
+  margin-left: 10px;
+}
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.search button {
+  width: 60px;
+  padding: 7px;
+  height: 60px;
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.search button img {
+  width: 25px;
+  height: auto;
+}
+input::placeholder {
+  color: #133257;
+}
+.search input {
+  width: 80%;
+  color: #133257;
+  padding: 15px 15px 15px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+.not-found {
+  text-align: left;
+  margin-top: 5px;
+  color: rgb(224, 16, 16);
+  font-weight: 600;
+  font-size: 17px;
+}
+.temperature {
+  margin-bottom: 5px;
+}
+.city,
+.temperature {
+  color: rgba(19, 50, 87, 0.8);
+}
+.btn-reset {
+  width: 90px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #00feba;
+  background: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 3px solid #00feba;
+  cursor: pointer;
+}
+.hidden,
+.hidden-info,
+.hide-text {
+  display: none;
+}
