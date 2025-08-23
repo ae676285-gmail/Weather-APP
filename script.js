@@ -48,7 +48,14 @@ async function checkWeather(country) {
 
 // function to take city name from user
 searchbtn.addEventListener("click", () => {
-  checkWeather(userInput.value);
+  if (userInput.value == "") {
+    cityNotFound.classList.remove("hide-text");
+    hiddenInfo.classList.add("hidden-info");
+    btnReset.classList.add("hidden");
+    userInput.value = "";
+  } else {
+    checkWeather(userInput.value);
+  }
 });
 
 // A button to reset the page to default
