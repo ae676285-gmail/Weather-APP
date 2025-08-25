@@ -99,6 +99,13 @@ input::placeholder {
   font-weight: 600;
   font-size: 17px;
 }
+.enter-city {
+  text-align: left;
+  margin-top: 5px;
+  color: rgb(224, 16, 16);
+  font-weight: 600;
+  font-size: 17px;
+}
 .temperature {
   margin-bottom: 5px;
 }
@@ -121,6 +128,7 @@ input::placeholder {
 }
 .hidden,
 .hidden-info,
-.hide-text {
+.hide-text,
+.hide-city {
   display: none;
 }

@@ -17,6 +17,7 @@ const weatherName = document.querySelector(".weather-name");
 const btnReset = document.querySelector(".btn-reset");
 const hiddenInfo = document.querySelector(".hidden-info");
 const cityNotFound = document.querySelector(".not-found");
+const enterCity = document.querySelector(".enter-city");
 
 //sychronizing data from  the API
 async function checkWeather(country) {
@@ -49,7 +50,7 @@ async function checkWeather(country) {
 // function to take city name from user
 searchbtn.addEventListener("click", () => {
   if (userInput.value == "") {
-    cityNotFound.classList.remove("hide-text");
+    enterCity.classList.remove("hide-city");
     hiddenInfo.classList.add("hidden-info");
     btnReset.classList.add("hidden");
     userInput.value = "";
