@@ -27,6 +27,7 @@ async function checkWeather(country) {
     cityNotFound.classList.remove("hide-text");
     hiddenInfo.classList.add("hidden-info");
     btnReset.classList.add("hidden");
+    enterCity.classList.add("hide-city");
     userInput.value = "";
   } else {
     let data = await response.json();
@@ -36,6 +37,7 @@ async function checkWeather(country) {
     hiddenInfo.classList.remove("hidden-info");
     btnReset.classList.remove("hidden");
     cityNotFound.classList.add("hide-text");
+    enterCity.classList.add("hide-city");
 
     //all the weather conditions
     cityName.innerHTML = data.name;
