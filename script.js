@@ -52,7 +52,7 @@ async function checkWeather(country) {
 // function to take city name from user
 searchbtn.addEventListener("click", () => {
   if (userInput.value == "") {
-    enterCity.classList.remove("hide-city");
+    enterCity.classList.add("hide-city");
     hiddenInfo.classList.add("hidden-info");
     btnReset.classList.add("hidden");
     userInput.value = "";
